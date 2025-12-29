@@ -18,7 +18,10 @@ api_qa/
 ├── index.html          # Main HTML file
 ├── styles.css          # Complete styling
 ├── script.js           # JavaScript interactions
-└── README.md          # Documentation
+├── README.md          # Documentation
+└── static/
+    ├── logo.svg        # Company logo (SVG - replace with your logo)
+    └── logo.png        # Alternative logo format
 ```
 
 ## Sections Overview
@@ -95,6 +98,20 @@ Change fonts in `styles.css` (lines 21-22) or update the Google Fonts link in `i
     --font-primary: 'Inter', sans-serif;
     --font-heading: 'Poppins', sans-serif;
 }
+```
+
+### Logo Replacement
+
+Replace the dummy logo with your actual company logo:
+
+1. **Recommended**: Save your logo as `static/logo.png` or `static/logo.svg`
+2. The logo will automatically appear in the navigation bar
+3. Recommended size: 60x60 pixels or 200x200 pixels (PNG), any size (SVG)
+4. Transparent background recommended for best results
+
+```html
+<!-- In index.html, the logo is referenced here: -->
+<img src="static/logo.svg" alt="Jayalakshmi Buildtech Logo" class="logo-image">
 ```
 
 ### Content

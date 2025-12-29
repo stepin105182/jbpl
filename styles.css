@@ -80,6 +80,24 @@ body {
 
 .logo {
     display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.logo:hover {
+    opacity: 0.9;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
     flex-direction: column;
     gap: 2px;
 }
@@ -1031,8 +1049,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo-image {
+        height: 40px;
+    }
+
     .logo-main {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .logo-sub {
